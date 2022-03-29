@@ -4,7 +4,7 @@ import android.util.Log;
 
 public class Tools {
 
-    public void Test(){
+    public static void Test(){
         Log.e("JianFan","This is a test info!");
     }
 }
