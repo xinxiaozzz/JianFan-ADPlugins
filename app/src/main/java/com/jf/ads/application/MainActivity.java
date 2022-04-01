@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.jf.ads.adlibrary.Tools;
+import com.jf.ads.ADsManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void TestCode(){
-        Tools.Test();
-    }
+
+
 }
