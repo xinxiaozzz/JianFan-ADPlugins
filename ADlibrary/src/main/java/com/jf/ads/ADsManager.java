@@ -31,6 +31,7 @@ public class ADsManager extends Activity {
 
 
     private static ADsManager aDsManager = new ADsManager();
+
     public static Object getInstance() {
         Tools.LogInfo("getInstance");
         return aDsManager;
@@ -39,7 +40,6 @@ public class ADsManager extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mContext=this;
         try {
             appID = getData("appID");
             rewardCode = getData("rewardCode");
@@ -48,7 +48,8 @@ public class ADsManager extends Activity {
         }
     }
 
-    public void initSDK() {
+    public void initSDK(Context _mContext) {
+        mContext = _mContext;
         TTAdSdk.init(mContext, buildConfig(), new TTAdSdk.InitCallback() {
             @Override
             public void success() {
@@ -66,7 +67,8 @@ public class ADsManager extends Activity {
         });
     }
 
-    public void initSDK(boolean mDebugModel) {
+    public void initSDK(Context _mContext, boolean mDebugModel) {
+        mContext = _mContext;
         debugModel = mDebugModel;
         initSDK();
     }
