@@ -43,6 +43,7 @@ public class ADsManager extends Activity {
         try {
             appID = getData("appID");
             rewardCode = getData("rewardCode");
+            debugModel = getData("DebugModle") == "true";
         } catch (PackageManager.NameNotFoundException e) {
             Tools.LogError("请先在AndroidManifest.xml中的Activity中增加appID/rewardCode对应的meta-data元素");
         }
@@ -67,11 +68,6 @@ public class ADsManager extends Activity {
         });
     }
 
-    public void initSDK(Context _mContext, boolean mDebugModel) {
-        mContext = _mContext;
-        debugModel = mDebugModel;
-        initSDK();
-    }
 
     private TTAdConfig buildConfig() {
 

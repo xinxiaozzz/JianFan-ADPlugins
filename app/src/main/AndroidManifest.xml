@@ -29,6 +29,9 @@
         <meta-data
             android:name="fullCode"
             android:value="948164936" />
+        <meta-data
+            android:name="DebugModle"
+            android:value="false" />
 
     </application>
 
