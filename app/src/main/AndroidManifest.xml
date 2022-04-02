@@ -22,13 +22,13 @@
 
         <meta-data
             android:name="appID"
-            android:value="123456" />
+            android:value="5273672" />
         <meta-data
             android:name="rewardCode"
-            android:value="123456" />
+            android:value="948129941" />
         <meta-data
             android:name="fullCode"
-            android:value="123456" />
+            android:value="948164936" />
 
     </application>
 
