@@ -34,6 +34,8 @@ android {
 
 dependencies {
     implementation fileTree(includes: ['*.jar'],dir: 'libs')
+    
+
     //SDK：
     implementation 'com.pangle.cn:ads-sdk-pro:4.3.0.8'
     //noinspection GradleCompatible

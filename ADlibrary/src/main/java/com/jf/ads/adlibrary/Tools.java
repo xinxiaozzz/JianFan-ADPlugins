@@ -1,8 +1,10 @@
 package com.jf.ads.adlibrary;
 
+import android.content.Intent;
 import android.util.Log;
 
 import com.unity3d.player.UnityPlayer;
+
 
 public class Tools {
 
